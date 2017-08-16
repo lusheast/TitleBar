@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    style="@style/title_bar_style">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:src="@drawable/iv_back_arrow_white"/>
+
+        <TextView
+            android:id="@+id/left_tv"
+            style="@style/title_bar_left_text"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/title_icon"
+            style="@style/title_center_icon_style"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_text_style"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/right_text"
+            style="@style/title_bar_right_text"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/right_icon"
+            style="@style/title_bar_right_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
